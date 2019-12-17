@@ -10,12 +10,12 @@ export default class IndexPage extends React.Component {
       <section className="section">
         <div className="container">
           <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">{title}</h1>
+            <h1 className="has-text-weight-bold is-size-2">Projects From 2019</h1>
           </div>
           {posts.map(({ node: post }) => (
             <div
-              className="content"
-              style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+              className="content posthp"
+              style={{ border: '1px solid #eaecee', padding: '2em 4em'}}
               key={post.id}
             >
               <p>
@@ -24,10 +24,7 @@ export default class IndexPage extends React.Component {
                 </Link>
                 <span> &bull; </span>
                 <small>
-                  {post.date} - posted by{' '}
-                  <Link to={`/author/${post.author.slug}`}>
-                    {post.author.name}
-                  </Link>
+                  {post.date}
                 </small>
               </p>
               <div>
@@ -36,13 +33,17 @@ export default class IndexPage extends React.Component {
                     __html: post.excerpt.replace(/<p class="link-more.*/, ''),
                   }}
                 />
+                <br></br>
                 <Link className="button is-small" to={post.slug}>
-                  Keep Reading →
+                  Read More →
                 </Link>
               </div>
             </div>
           ))}
         </div>
+        <div className="content" style={{ padding: '2em 9.2em' }}>
+           <p>Made with ❤️ in West Palm Beach, FL using <a href="https://www.gatsbyjs.org/">GatsbyJS</a> </p>
+           </div>
       </section>
     )
   }

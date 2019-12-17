@@ -22,27 +22,10 @@ export const BlogPostTemplate = ({
             </h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <div style={{ marginTop: `4rem` }}>
-              <p>
-                {date} - posted by{' '}
-                <Link to={`/author/${author.slug}`}>{author.name}</Link>
-              </p>
-              {categories && categories.length ? (
-                <div>
-                  <h4>Categories</h4>
-                  <ul className="taglist">
-                    {categories.map(category => (
-                      <li key={`${category.slug}cat`}>
-                        <Link to={`/categories/${category.slug}/`}>
-                          {category.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
+          
               {tags && tags.length ? (
                 <div>
-                  <h4>Tags</h4>
+                  <h4>See Similar Projects</h4>
                   <ul className="taglist">
                     {tags.map(tag => (
                       <li key={`${tag.slug}tag`}>
