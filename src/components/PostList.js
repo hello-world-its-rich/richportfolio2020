@@ -41,7 +41,7 @@ export default class IndexPage extends React.Component {
             </div>
           ))}
         </div>
-        <div className="content" style={{ padding: '2em 9.2em' }}>
+        <div className="content" style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: '25px' }}>
            <p>Made with ❤️ in West Palm Beach, FL using <a href="https://www.gatsbyjs.org/">GatsbyJS</a> </p>
            </div>
       </section>
