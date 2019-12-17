@@ -27,6 +27,7 @@ const Navbar = () => (
               </figure>
             </Link>
           </div>
+       {/*    
           <div className="navbar-start">
             {data.allWordpressPage.edges.map(edge => (
               <Link
@@ -37,7 +38,8 @@ const Navbar = () => (
                 {edge.node.title}
               </Link>
             ))}
-          </div>
+          </div>   */}
+
           <div className="navbar-end">
 
             <a
