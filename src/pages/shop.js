@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import drone from '../img/drone.jpg'
+import '../components/custom.css'
 
 
 const ShopPage = () => (
@@ -9,7 +10,7 @@ const ShopPage = () => (
       <h1>Hello World Shop</h1>
       <p>Welcome to my future shop</p>
     
-                <button class="snipcart-add-item red"
+                <button class="snipcart-add-item blue" 
                 data-item-id="drone"
                 data-item-price="1.99"
                 data-item-url="/shop"
