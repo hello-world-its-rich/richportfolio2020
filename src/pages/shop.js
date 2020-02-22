@@ -9,7 +9,7 @@ const ShopPage = () => (
       <h1>Hello World Shop</h1>
       <p>Welcome to my future shop</p>
     
-                <button class="snipcart-add-item"
+                <button class="snipcart-add-item red"
                 data-item-id="drone"
                 data-item-price="1.99"
                 data-item-url="/shop"
