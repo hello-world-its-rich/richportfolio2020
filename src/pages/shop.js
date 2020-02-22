@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import '../components/snipcart.css'
+import drone from '../img/drone.jpg'
+
 
 const ShopPage = () => (
   <Layout>
@@ -8,17 +9,17 @@ const ShopPage = () => (
       <h1>Hello World Shop</h1>
       <p>Welcome to my future shop</p>
     
-      <button class="snipcart-add-item"
-  data-item-id="drone"
-  data-item-price="1.99"
-  data-item-url="/shop"
-  data-item-description="One of my best drone photos"
-  data-item-image="../img/drone.jpg"
-  data-item-name="Drone"
-  data-item-custom1-name="Frame color"
-  data-item-custom1-options="Black|Brown|Gold">
-  Add to Cart
-</button>
+                <button class="snipcart-add-item"
+                data-item-id="drone"
+                data-item-price="1.99"
+                data-item-url="/shop"
+                data-item-description="One of my best drone photos"
+                data-item-image={drone}
+                data-item-name="Drone"
+                data-item-custom1-name="Frame color"
+                data-item-custom1-options="Black|Brown|Gold">
+                Add to Cart
+                </button>
 
 
     </div>
